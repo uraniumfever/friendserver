@@ -124,6 +124,8 @@ func TestReadSignInPayloadOnFailingReader(t *testing.T) {
 	}
 }
 
+// Note: Contrary to the code-test specification I decided to include the
+//       user_id in the JSON payload.
 func TestSendOnlineStatusPayload(t *testing.T) {
 	tests := []struct {
 		testname   string

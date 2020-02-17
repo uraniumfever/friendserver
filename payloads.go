@@ -14,6 +14,8 @@ type userSignInPayload struct {
 }
 
 // onlineStatusPayload models the JSON online status notification response.
+// Note: Contrary to the code-test specification I decided to include the
+//       user_id in the body of this payload.
 type onlineStatusPayload struct {
 	UserID int  `json:"user_id"`
 	Online bool `json:"online"`
