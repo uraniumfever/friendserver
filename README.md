@@ -45,6 +45,7 @@ User2 should receive a notification about user1 signing off:
 {"user_id":1, "online":false}
 ```
 > ‼️ User2 receives this notification because user1 lists them as a friend. User2 did not reciprocate that friendship however. This feels like a strange UX to me but it is difficult to interpret the code challenge spec in any other way 🙃🤷
+> I.e. Steps 4 and 5 in the spec describe different (and possibly non-symmetric) approaches to determine the set users to notify about logins vs logoffs and this has been faithfully implemented here.
 
 
 ## Questions & Answers
